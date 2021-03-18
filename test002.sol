@@ -1,8 +1,20 @@
 pragma solidity ^0.4.11;
 
 contract Example005 {
-  function operation() returns (uint result) {
+  function s_operation() returns (uint result) {
     result = sum(11,5);
+  }
+  
+  function m_operation() returns (uint result) {
+    result = minus(11,5);
+  }
+  
+  function mm_operation() returns (uint result) {
+    result = multi(11,5);
+  }
+  
+  function d_operation() returns (uint result) {
+    result = div(11,5);
   }
 
   function sum(uint a, uint b) returns (uint) {
